@@ -5,7 +5,7 @@
 	<style>
 
 		body {
-			/*background-color: ;*/
+			background-color: #e1ffbf;
 			margin: 0;
 		}
 
@@ -14,7 +14,7 @@
 		}
 
 		a {
-			color: white;
+			color: #473f3f;
 		}
 		
 		* > p {
@@ -24,30 +24,37 @@
 		h2, h3, h4, p {
 			margin: 0;
 		}
+
 		.head {
+			width: 880px;
+			margin-left: auto;
+			margin-right: auto;
 			height: 70px;
-			background-color: #930000;
+			background-color: #ffd1d1;
 		}
 
 		.head-inner {
 			padding-top: 20px;
 			text-align: center;
-			color: #ffd1d1;
+			color: #930000;
 		}
 
-		.colomn {
+		.project_container {
 			/*display: inline-block;*/
 			/*width: 50%;*/
-			background-color: #473f3f;
+			width: 700px;
+			margin-left: auto;
+			margin-right: auto; 
+			background-color: #cecece;
 		}
 
-		.colomn > * {
-			color: #cecece;
+		.project_container > * {
+			color: #473f3f;
 		}
 
 		.project {
 			padding: 16px; 
-			width: 25%;
+			width: 300px;
 			margin-left: auto;
 			margin-right: auto;
 			border: solid black 2px;
@@ -58,125 +65,114 @@
 		}
 
 		.middle {
+			width: 775px;
+			margin-left: auto;
+			margin-right: auto;
 			padding: 10px;
-			background-color: #090b8c;
+			background-color: #ccccff;
 		}
 
 		.middle > * {
-			color: #ccccff;
+			color: #090b8c;
+			width: 80%;
 		}
 
-		.col-3 {
-			width: 30%;
+		.col{
+			width: 49%;
 			display: inline-block;
 		}
-		.bio {
+		.text {
 			/*width: 30%;*/
-			padding-left: 8px;
+			padding-left: 0px;
 		}
-		.bio > * {
-			margin: 0;
+		.text > p {
+			padding: 5px;
 		}
 
-		.topic {
-			padding: 10px;
+		ul {
+			margin: 5px;
 		}
+		.topic {
+			padding: 5px;
+			float: top;
+		}
+		.footer > * {
+			padding: 20px;
+			display: inline-block;
+		}
+
 	</style>
 </head>
 <body>
-
-	<!-- <div class="container">
-		<h3 class="red" style="padding: 12px"> Jonathan Plata </h3>
-		<div class="row">
-			<div class="col s7">
-				<div class="teal flow-text bio">
-					<p class="bio">
-					Junior Web Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others as well as having attention to detail. Highly self-motivated, reliable, flexible and always trying to learn new technologies. Always willing to learn new task without limitation and won’t stop until satisfied with the completed work.
-					</p>
-				</div>
-				<br>
-				<div class="deep-orange lighten-4" style="">
-					<div class="row">
-						<div class="col s3">
-							<a href="https://www.linkedin.com/in/jonathan-plata/">Linkedin</a>
-						</div>
-			
-						<div class="col s3">
-							<a href="https://github.com/JonathanP97">Github</a>
-						</div>
-			
-					</div>
-				</div>
-			</div>
-			
-			<div class="col s4 offset-s1 green liri" style="padding-top: 8px">
-				<b>Liri Node App</b>
-				<p>Simple node based app that allows you to look up songs and movies. Uses JS, several node packages, Spotify api and OMDB</p>
-			
-				
-				<ul>
-					<li><b>Experience With:</b> </li>
-					<li>HTML</li>
-					<li>Javascript</li>
-					<li>Node js</li>
-					<li>Java</li>
-					<li>jQuery</li>
-					<li>Firebase</li>
-					<li>SQL/MySQL</li>
-					<li>Express</li>
-					<li>React</li>
-				</ul>				
-			</div>
-		</div>
-	</div> -->
 	<div class="head">
 		<h2 class="head-inner">Jonathan Plata</h2>
 	</div>	
-
+	<br>
 	<div class="middle">
-		<div class="col-3">
+		<div class="col">
 			<h2 class="topic">About</h2>
-			<div class="flow-text bio">	
-				<p class="">
-				Junior Web Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others as well as having attention to detail. Highly self-motivated, reliable, flexible and always trying to learn new technologies. Always willing to learn new task without limitation and won’t stop until satisfied with the completed work.
+			<div class="text">	
+				<p>
+				Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others as well as having attention to detail. 
+				</p>
+				<p> I am a junior web devloper currently at San Diego Mesa College looking to transfer next year.
 				</p>
 			</div>
 		</div>
-		<div class="col-3">
-			<h2 class="topic">Background</h2>
-			<p> I am a junior web devloper currently at San Diego Mesa College looking to transfer next year. 
-			</p>
+		<div class="col">
+			<h2 class="topic">Skills</h2>
+			<div class="text">
+				<ul><li>Javascript</li>
+					<li>Mongo & MySql</li>
+					<li>Express</li>
+					<li>React</li>
+					<li>Node.js</li>
+					<li>Java | Python</li>
+				</ul>
+			</div>
 		</div>
-
 	</div>
-
-	<div class="colomn">
-		<h2 class="topic">Projects</h2>
-		
-		<div class="r">
+	<br>
+	<div class="project_container">
+		<h2 class="topic">Applications</h2>
+		<div class="row">
 			<div class="project">
-				<h3><a href="https://github.com/JonathanP97/nyt-react">Nyt React</a></h3>
+				<h3><a href="https://github.com/JonathanP97/nyt-react" target="__blank">Nyt React</a></h3>
 				<p>A react app that is connected to the New York Times API to pull articles</p>
 				<p>Built with node.js, express, axios and react</p>
 				
 			</div>	
-		</div><br>
-		<div class="r">
+		</div>
+		<br>
+		<div class="row">
 			<div class="project">
-				<h3><a href="https://github.com/JonathanP97/liri-app">Liri App</a></h3>
+				<h3><a href="https://github.com/JonathanP97/liri-app" target="__blank">Liri App</a></h3>
 				<p>Almost like Siri, Liri is a command line app that can search for songs or movies</p>
 				<p> Built with node.js, spotify and OMDB API</p>
 			</div>
 		</div>
 		<br>
-		<div class="r">
+		<div class="row">
 			<div class="project">
-				<h3><a href="https://github.com/JonathanP97/bamazon">Bamazon</a></h3>
+				<h3><a href="https://github.com/JonathanP97/bamazon" target="__blank">Bamazon</a></h3>
+				<p>Another node.js app that connects to a storefront via mysql</p>
+				<p>Built with node.js, inquirer, easy-table and mysql</p>
+			</div>	
+		</div>
+		<br>
+		<div class="row">
+			<div class="project">
+				<h3><a href="https://github.com/JonathanP97/house-sorter" target="__blank">House Sorter</a></h3>
 				<p>Another node.js app that connects to a storefront via mysql</p>
 				<p>Built with node.js, inquirer, easy-table and mysql</p>
 			</div>	
 		</div>
 	</div>
+	<br>
+
+	<div class="head footer">
+		<h2 class="head-inner"><a href="https://github.com/JonathanP97" target="__blank">Github</a></h2>
+		<h2 class="head-inner"><a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">LinkedIn</a></h2>
 	</div>
 </body>
 </html>
