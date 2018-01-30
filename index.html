@@ -5,8 +5,12 @@
 	<style>
 
 		body {
-			background-color: #e1ffbf;
+			/*background-color: #e1ffbf;*/
+    		background-color: #cccccc;
+    		/*background-image: radial-gradient(#1f471d, #337a2f, #a9efa5);*/
 			margin: 0;
+			/*background: linear-gradient(to bottom right, blue, #32d3bb, #2fe4fc, #32d3bb, blue);*/
+			background: linear-gradient(to bottom right, blue, #2fe4fc, #32d3bb, #2fe4fc, blue);
 		}
 
 		* {
@@ -14,7 +18,8 @@
 		}
 
 		a {
-			color: #473f3f;
+			/*color: #473f3f;*/
+			color: white;
 		}
 		
 		* > p {
@@ -26,7 +31,7 @@
 		}
 
 		.head {
-			width: 880px;
+			width: 800px;
 			margin-left: auto;
 			margin-right: auto;
 			height: 70px;
@@ -42,7 +47,7 @@
 		.project_container {
 			/*display: inline-block;*/
 			/*width: 50%;*/
-			width: 700px;
+			width: 570px;
 			margin-left: auto;
 			margin-right: auto; 
 			background-color: #cecece;
@@ -64,25 +69,48 @@
 			padding-bottom: 3px; 
 		}
 
-		.middle {
-			width: 775px;
+		.about {
+			width: 700px;
 			margin-left: auto;
 			margin-right: auto;
 			padding: 10px;
 			background-color: #ccccff;
 		}
 
-		.middle > * {
+		.about-col {
+			width: 60%;
+			display: inline-block;
+
+		}
+
+		.img-col {
+			width: 39%;
+			display: inline-block;
+		}
+		.about > * {
 			color: #090b8c;
-			width: 80%;
+		}
+
+		.skills {
+			width: 430px;
+			/*margin-left: auto;*/
+			margin-right: auto;
+			padding: 10px;
+			margin-top: 50px;
+			background-color: #fffda0;
+		}
+
+		.skills > * {
+			color: #cdd100;
 		}
 
 		.col{
 			width: 49%;
 			display: inline-block;
 		}
+
 		.text {
-			/*width: 30%;*/
+			display: inline-block;
 			padding-left: 0px;
 		}
 		.text > p {
@@ -96,19 +124,102 @@
 			padding: 5px;
 			float: top;
 		}
+
 		.footer > * {
 			padding: 20px;
 			display: inline-block;
+		}
+
+		#proj-nyt:hover {
+			background-image: url('nyt.PNG');
+			background-size: 320px 250px;
+			color: #930000;
+		}
+
+		#proj-liri:hover {
+			background-image: url('liri.PNG');
+			background-size: 340px 190px;
+			color: khaki;
+		}
+
+		#proj-bama:hover {
+			background-image: url('bama.PNG');
+			background-size: 340px 280px;
+			color: powderblue;
+		}
+
+		#proj-sort:hover {
+			background-image: url('sort.PNG');
+			background-size: 330px 200px;
+			color: yellow;
+		}
+
+		img {
+			float: right;
+			padding: 30px;
 		}
 
 	</style>
 </head>
 <body>
 	<div class="head">
-		<h2 class="head-inner">Jonathan Plata</h2>
+		<h1 class="head-inner">Jonathan Plata</h1>
 	</div>	
-	<br>
-	<div class="middle">
+	<br><br>
+
+	<div>	
+		<div class="about">
+			<div class="row">
+				<div class="about-col">
+					<h2 class="topic">About</h2>
+					<div class="text">	
+						<p>
+						Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others and a great attention to detail. 
+						</p>
+						<p> I am a full stack web devloper currently studying Computer Science at San Diego Mesa College and working to transfer next year. I think computers are cool because we can do almost anything with them.
+						</p>
+					</div>
+				</div>
+				<div class="img-col">
+					<img src="./images/me.jpg" height="220" width="160">
+				</div>
+			</div>
+			<!-- <div class="col">
+				<h2 class="topic">About</h2>
+				<div class="text">	
+					<p>
+					Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others and a great attention to detail. 
+					</p>
+					<p> I am a full stack web devloper currently studying Computer Science at San Diego Mesa College and working to transfer next year.
+					</p>
+				</div>
+			</div> -->
+			
+
+
+				<div class="skills">
+					<h2 class="topic">Skills</h2>
+					<div class="text">
+						<ul><li>Javascript</li>
+							<li>HTML</li>
+							<li>Java | Python</li>
+							<li>API CRUD</li>
+						</ul>
+					</div>
+					<div class="text">
+						<ul>
+							<li>Mongo & MySql</li>
+							<li>Express</li>
+							<li>React</li>
+							<li>Node.js</li>
+						</ul>
+					</div>
+				</div>
+		</div>		
+	</div>
+	<br><br>
+
+<!-- 	<div class="about">
 		<div class="col">
 			<h2 class="topic">About</h2>
 			<div class="text">	
@@ -120,23 +231,29 @@
 			</div>
 		</div>
 		<div class="col">
-			<h2 class="topic">Skills</h2>
 			<div class="text">
-				<ul><li>Javascript</li>
-					<li>Mongo & MySql</li>
-					<li>Express</li>
-					<li>React</li>
-					<li>Node.js</li>
-					<li>Java | Python</li>
-				</ul>
+				
 			</div>
 		</div>
 	</div>
 	<br>
+	<div class="skills">
+		<h2 class="topic">Skills</h2>
+		<div class="text">
+			<ul><li>Javascript</li>
+				<li>Mongo & MySql</li>
+				<li>Express</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>Java | Python</li>
+			</ul>
+		</div>
+	</div> -->
+	
 	<div class="project_container">
 		<h2 class="topic">Applications</h2>
 		<div class="row">
-			<div class="project">
+			<div class="project" id="proj-nyt">
 				<h3><a href="https://github.com/JonathanP97/nyt-react" target="__blank">Nyt React</a></h3>
 				<p>A react app that is connected to the New York Times API to pull articles</p>
 				<p>Built with node.js, express, axios and react</p>
@@ -145,7 +262,7 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="project">
+			<div class="project" id="proj-liri">
 				<h3><a href="https://github.com/JonathanP97/liri-app" target="__blank">Liri App</a></h3>
 				<p>Almost like Siri, Liri is a command line app that can search for songs or movies</p>
 				<p> Built with node.js, spotify and OMDB API</p>
@@ -153,7 +270,7 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="project">
+			<div class="project" id="proj-bama">
 				<h3><a href="https://github.com/JonathanP97/bamazon" target="__blank">Bamazon</a></h3>
 				<p>Another node.js app that connects to a storefront via mysql</p>
 				<p>Built with node.js, inquirer, easy-table and mysql</p>
@@ -161,16 +278,17 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="project">
+			<div class="project" id="proj-sort">
 				<h3><a href="https://github.com/JonathanP97/house-sorter" target="__blank">House Sorter</a></h3>
-				<p>Another node.js app that connects to a storefront via mysql</p>
-				<p>Built with node.js, inquirer, easy-table and mysql</p>
+				<p>Webpage app where people can be sorted into a hogwarts house</p>
+				<p>Built with node.js, materialize css for layout and deployed on heroku</p>
 			</div>	
-		</div>
+		</div><br>
 	</div>
-	<br>
+	<br><br>
 
 	<div class="head footer">
+		<!-- img src="./images/linkedin.png" height="70" width="70"><a href="https://github.com/JonathanP97" target="__blank"></a></img> -->
 		<h2 class="head-inner"><a href="https://github.com/JonathanP97" target="__blank">Github</a></h2>
 		<h2 class="head-inner"><a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">LinkedIn</a></h2>
 	</div>
