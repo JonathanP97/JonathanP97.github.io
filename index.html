@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Jonathan Plata</title>
+	<link rel="shortcut icon" href="./images/smile.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style>
 
@@ -10,7 +11,7 @@
     		/*background-image: radial-gradient(#1f471d, #337a2f, #a9efa5);*/
 			margin: 0;
 			/*background: linear-gradient(to bottom right, blue, #32d3bb, #2fe4fc, #32d3bb, blue);*/
-			background: linear-gradient(to bottom right, blue, #2fe4fc, #32d3bb, #2fe4fc, blue);
+			background: linear-gradient(to bottom right, blue, #2fe4fc, #66ffe8, #2fe4fc, blue);
 		}
 
 		* {
@@ -35,7 +36,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			height: 70px;
-			background-color: #ffd1d1;
+			/*background-color: #ffd1d1;*/
 		}
 
 		.head-inner {
@@ -51,7 +52,7 @@
 			margin-left: auto;
 			margin-right: auto; 
 			/*background-color: #bcd1f2;*/
-			opacity: 0.75;
+			/*opacity: 0.95;*/
 		}
 
 		.project_container > * {
@@ -75,14 +76,22 @@
 			margin-left: auto;
 			margin-right: auto;
 			padding: 10px;
-			/*background-color: #ccccff;*/
+			/*background: linear-gradient(to bottom, #66eaff, #66ffe8, #66eaff);*/
+			/*background: radial-gradient( #66eaff ,#66ffe8);*/
+			opacity: 0.97;
 		}
 
 		.about-col {
-			width: 60%;
+			/*width: 60%;*/
 			display: inline-block;
-			opacity: 0.7;
+			/*opacity: 0.8;*/
+		}
 
+		.about-me{
+			width: 78%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
 		}
 
 		.img-col {
@@ -95,15 +104,22 @@
 
 		.skills {
 			width: 430px;
-			/*margin-left: auto;*/
+			margin-left: auto;
 			margin-right: auto;
-			padding: 10px;
 			margin-top: 50px;
-			background-color: #fffda0;
 		}
 
 		.skills > * {
-			color: #cdd100;
+			color: #090b8c;
+		}
+		
+
+		.skills-left {
+			margin-left: 35px;
+		}
+
+		.skills-right {
+			/*margin-right: 20px;*/
 		}
 
 		.col{
@@ -114,44 +130,63 @@
 		.text {
 			display: inline-block;
 			padding-left: 0px;
+			/*text-align: center;*/
 		}
+
 		.text > p {
 			padding: 5px;
+			font-size: 98%;
 		}
 
 		ul {
 			margin: 5px;
+			list-style-type:none;
 		}
+
+		li {
+			padding: 2px;
+		}
+
 		.topic {
+			text-align: center;
 			padding: 5px;
 			float: top;
 		}
+	
+		.footer {
+			text-align: center;
+			height: 60px;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		.footer > * {
+			font-size: 100%;
 			padding: 20px;
 			display: inline-block;
 		}
 
 		#proj-nyt:hover {
-			background-image: url('nyt.PNG');
+			background-image: url('./images/nyt.PNG');
 			background-size: 320px 250px;
 			color: #930000;
 		}
 
 		#proj-liri:hover {
-			background-image: url('liri.PNG');
+			background-image: url('./images/liri.PNG');
 			background-size: 340px 190px;
 			color: khaki;
 		}
 
 		#proj-bama:hover {
-			background-image: url('bama.PNG');
+			background-image: url('./images/bama.PNG');
 			background-size: 340px 280px;
 			color: powderblue;
 		}
 
 		#proj-sort:hover {
-			background-image: url('sort.PNG');
+			background-image: url('./images/sort.PNG');
 			background-size: 330px 200px;
 			color: yellow;
 		}
@@ -167,91 +202,51 @@
 	<div class="head">
 		<h1 class="head-inner">Jonathan Plata</h1>
 	</div>	
-	<br><br>
+
+	<div class="footer">
+		<h2 class="head-inner"><a href="https://github.com/JonathanP97" target="__blank">Github</a></h2>
+		<h2 class="head-inner"><a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">LinkedIn</a></h2>
+	</div>
 
 	<div>	
 		<div class="about">
 			<div class="row">
 				<div class="about-col">
-					<h2 class="topic">About</h2>
+					<h2 class="topic">About Me</h2>
 					<div class="text">	
-						<p>
-						Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others and a great attention to detail. 
+						<p class="about-me">Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Love to collaborate with others, great attention to detail and friendly.
 						</p>
-						<p> I am a full stack web devloper currently studying Computer Science at San Diego Mesa College and working to transfer next year. I think computers are cool because we can do almost anything with them.
+						<p class="about-me">Currently studying Computer Science at San Diego Mesa College and working to transfer next year. Computers are cool because we can do almost anything with them.
 						</p>
 					</div>
 				</div>
-				<div class="img-col">
+				<!-- <div class="img-col">
 					<img src="./images/me.jpg" height="220" width="160">
+				</div> -->
+			</div>
+
+			<div class="skills">
+				<h2 class="topic">Skills</h2>
+				<div class="text skills-left">
+					<ul><li>Javascript</li>
+						<li>HTML</li>
+						<li>Java | Python</li>
+						<li>API CRUD</li>
+					</ul>
+				</div>
+				<div class="text skills-right">
+					<ul>
+						<li>Mongo & MySql</li>
+						<li>Express</li>
+						<li>React</li>
+						<li>Node.js</li>
+					</ul>
 				</div>
 			</div>
-			<!-- <div class="col">
-				<h2 class="topic">About</h2>
-				<div class="text">	
-					<p>
-					Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others and a great attention to detail. 
-					</p>
-					<p> I am a full stack web devloper currently studying Computer Science at San Diego Mesa College and working to transfer next year.
-					</p>
-				</div>
-			</div> -->
-			
-
-
-				<div class="skills">
-					<h2 class="topic">Skills</h2>
-					<div class="text">
-						<ul><li>Javascript</li>
-							<li>HTML</li>
-							<li>Java | Python</li>
-							<li>API CRUD</li>
-						</ul>
-					</div>
-					<div class="text">
-						<ul>
-							<li>Mongo & MySql</li>
-							<li>Express</li>
-							<li>React</li>
-							<li>Node.js</li>
-						</ul>
-					</div>
-				</div>
 		</div>		
 	</div>
-	<br><br>
-
-<!-- 	<div class="about">
-		<div class="col">
-			<h2 class="topic">About</h2>
-			<div class="text">	
-				<p>
-				Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Able to collaborate with others as well as having attention to detail. 
-				</p>
-				<p> I am a junior web devloper currently at San Diego Mesa College looking to transfer next year.
-				</p>
-			</div>
-		</div>
-		<div class="col">
-			<div class="text">
-				
-			</div>
-		</div>
-	</div>
 	<br>
-	<div class="skills">
-		<h2 class="topic">Skills</h2>
-		<div class="text">
-			<ul><li>Javascript</li>
-				<li>Mongo & MySql</li>
-				<li>Express</li>
-				<li>React</li>
-				<li>Node.js</li>
-				<li>Java | Python</li>
-			</ul>
-		</div>
-	</div> -->
-	
+
 	<div class="project_container">
 		<h2 class="topic">Applications</h2>
 		<div class="row">
@@ -287,12 +282,7 @@
 			</div>	
 		</div><br>
 	</div>
-	<br><br>
+	<br>
 
-	<div class="head footer">
-		<!-- img src="./images/linkedin.png" height="70" width="70"><a href="https://github.com/JonathanP97" target="__blank"></a></img> -->
-		<h2 class="head-inner"><a href="https://github.com/JonathanP97" target="__blank">Github</a></h2>
-		<h2 class="head-inner"><a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">LinkedIn</a></h2>
-	</div>
 </body>
 </html>
