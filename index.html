@@ -86,6 +86,7 @@
 			width: 78%;
 			margin-left: auto;
 			margin-right: auto;
+			line-height: 1.56;
 			text-align: center;
 		}
 
@@ -98,24 +99,22 @@
 		}
 
 		.skills {
-			width: 430px;
+			/*width: 430px;*/
 			margin-left: auto;
 			margin-right: auto;
-			margin-top: 50px;
+			margin-top: 30px;
+		}
+
+		.skills-in {
+			margin-left: auto;
+			margin-right: auto;
+			width: 40%;
 		}
 
 		.skills > * {
 			color: #090b8c;
 		}
 		
-
-		.skills-left {
-			margin-left: 35px;
-		}
-
-		.skills-right {
-			/*margin-right: 20px;*/
-		}
 
 		.col{
 			width: 49%;
@@ -134,7 +133,9 @@
 		}
 
 		ul {
-			margin: 5px;
+			/*margin-right: auto;
+			margin-left: auto;*/
+			display: inline-block;
 			list-style-type:none;
 		}
 
@@ -187,8 +188,8 @@
 		}
 
 		img {
-			height: 30px;
-			width: 30px;
+			height: 40px;
+			width: 40px;
 			margin: 0;
 		}
 
@@ -199,16 +200,6 @@
 		<h1 class="head-inner">Jonathan Plata</h1>
 	</div>	
 
-	<div class="footer">
-		<a href="https://github.com/JonathanP97" target="__blank">
-			<img src="./images/github.png"> 
-		</a>
-		 
-		<a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">
-			<img src="./images/linkedin.png" > 
-		</a>	
-		
-	</div>
 
 	<div>	
 		<div class="about">
@@ -216,9 +207,9 @@
 				<div class="about-col">
 					<h2 class="topic">About Me</h2>
 					<div class="text">	
-						<p class="about-me">Full Stack Developer excited to learn more, provide my analytic thinking and great problem solving skills. Love to collaborate with others, great attention to detail and friendly.
+						<p class="about-me">Full Stack Javascript Developer excited to learn more, provide my analytic thinking and great problem solving skills. Love to collaborate with others, with great attention to detail and passionate about programming.
 						</p>
-						<p class="about-me">Currently studying Computer Science at San Diego Mesa College and working to transfer next year. Computers are cool because we can do almost anything with them.
+						<p class="about-me">Currently studying Computer Science at San Diego Mesa College and working to transfer next year. Computers are amazing because we can do almost anything with them. The most versitile tool.
 						</p>
 					</div>
 				</div>
@@ -229,16 +220,16 @@
 
 			<div class="skills">
 				<h2 class="topic">Skills</h2>
-				<div class="text skills-left">
+				<div class="skills-in">
 					<ul><li>Javascript</li>
 						<li>HTML</li>
-						<li>Java | Python</li>
-						<li>API CRUD</li>
+						<li>Java </li>
+						<li>python</li>
+						<li>API</li>
 					</ul>
-				</div>
-				<div class="text skills-right">
 					<ul>
-						<li>Mongo & MySql</li>
+						<li>Mongo </li>
+						<li>MySql</li>
 						<li>Express</li>
 						<li>React</li>
 						<li>Node.js</li>
@@ -284,7 +275,17 @@
 			</div>	
 		</div><br>
 	</div>
-	<br>
 
+	<div class="footer">
+		<a href="https://github.com/JonathanP97" target="__blank">
+			<img src="./images/github.png"> 
+		</a>
+		<a href="https://www.linkedin.com/in/jonathan-plata/" target="__blank">
+			<img src="./images/linkedin.png" > 
+		</a>	
+	</div>
+	<script type="text/javascript">
+		document.getElementById('changingP').value = "test test";
+	</script>
 </body>
 </html>
